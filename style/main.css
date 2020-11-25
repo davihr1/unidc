@@ -12,7 +12,7 @@
 }
 
 main #item {
-    background: url('./img/the-flash-1-696x391.jpg');
+    background: url('../img/the-flash-1-696x391.jpg');
     background-repeat: no-repeat;
     backdrop-filter: #00000060;
     background-size: 100%;
