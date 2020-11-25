@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --color-primary-dark: #774DD6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+
+main #item {
+    background: url(/img/the-flash-1-696x391.jpg);
+    background-repeat: no-repeat;
+    backdrop-filter: #00000060;
+    background-size: 100%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+main #item header {
+    display: flex;
+    justify-content: space-between;
+    margin: 6mm;
+    margin-bottom: 5px;
+    align-items: center;
+    color: darkgrey;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: 1px solid darkgray;
+}
+main #item header #logo {
+    font-size: 2rem;
+    color: var(--color-primary-dark);
+}
+header .login button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    font-weight:  500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu #btnhome {
+    border-bottom: 2px solid darkred;
+    padding-bottom: 4px;
+    outline: none;
+}
+.menu button {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    /* color: whitesmoke; */
+    color: var(--color-primary-dark);
+    outline: none;
+    transition-duration: 2s;
+    cursor: pointer;
+    margin-left: 5mm;
+    margin-bottom: -1px;
+}
+ .menu button:focus {
+    border-bottom: 3px solid darkred;
+    padding-bottom: 4px;
+    outline: none;
+}
+
+.center {
+    animation-duration: 70s;
+    animation-name: hyperinfo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+    margin-top: 4ex;
+    font-size: 1.6rem;
+    line-height: 50px;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    width: 800px !important;
+    background: #00000096;
+}
+.center img {
+    height: 30rem;
+    margin-right: 5px;
+}
+
+@keyframes hyperinfo {
+        from {
+          margin-left: 70%;
+          width: 100%; 
+        }
+
+        to {
+          margin-left: 10%;
+          width: 100%;
+        }
+}
+
+footer {
+    display: flex;
+    margin-top: -3vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: rgba(245, 245, 245, 0.171);
+    font-size: 1.4rem;
+    width: 30mm;
+    height: 10mm;
+    text-align: center;
+}
+
+footer .dc {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+footer .dc p {
+    margin-left: 3mm;
+}
+
+#video {
+    font-size: 20mm;
+}
